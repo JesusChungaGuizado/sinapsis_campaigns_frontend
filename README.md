@@ -65,8 +65,8 @@ src/
 
 Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
-cd tu-repositorio
+git clone https://github.com/JesusChungaGuizado/sinapsis_campaigns_frontend.git
+cd sinapsis_campaigns_frontend
 ```
 Instalar dependencias
 ```bash
