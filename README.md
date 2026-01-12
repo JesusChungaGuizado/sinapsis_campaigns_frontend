@@ -1,27 +1,82 @@
-# SinapsisCampaignsFrontend
+# Sinapsis Campaigns - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Este proyecto corresponde al **frontend** del sistema de envío y gestión de campañas SMS.
+Permite:
 
-## Development server
+- Registrar campañas
+- Listar campañas por rango de fechas
+- Visualizar el detalle de mensajes de una campaña
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El frontend está desarrollado con **Angular 17**, utilizando **componentes standalone**, **lazy loading**, **environments** y buenas prácticas de arquitectura.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologías utilizadas
 
-## Build
+- Angular 17
+- TypeScript
+- Tailwind CSS
+- Angular Router
+- Reactive Forms
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Requisitos previos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Antes de ejecutar el proyecto asegúrate de tener instalado:
 
-## Running end-to-end tests
+- **Node.js** (v18 o superior recomendado)
+- **npm** (v9 o superior)
+- **Angular CLI 17**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Verificar versiones:
+```bash
+node -v
+npm -v
+ng version
+```
+---
+## Rutas principales de la aplicación
 
-## Further help
+| Ruta                      | Descripción                        |
+| ------------------------- | ---------------------------------- |
+| `/campaigns`              | Listado de campañas                |
+| `/campaigns/create`       | Registro de nueva campaña          |
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Estructura del proyecto
+
+```bash
+src/
+ ├─ app/
+ │   ├─ core/
+ │   │   ├─ models/
+ │   │   └─ services/
+ │   ├─ features/
+ │   │   ├─ campaigns/
+ │   │   └─ messages/
+ │   ├─ shared/
+ │   ├─ app.routes.ts
+ │   └─ app.component.ts
+ ├─ environments/
+ └─ styles.css
+```
+---
+## Instalación y ejecución del proyecto
+
+Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/tu-repositorio.git
+cd tu-repositorio
+```
+Instalar dependencias
+```bash
+npm install
+```
+Ejecutar el proyecto en modo desarrollo
+```bash
+ng serve
+```
+Acceder a la aplicación
+```bash
+http://localhost:4200
+```

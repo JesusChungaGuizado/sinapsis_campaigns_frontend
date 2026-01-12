@@ -1,0 +1,20 @@
+<table class="w-full border">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border p-2">Id</th>
+      <th class="border p-2">Celular</th>
+      <th class="border p-2">Texto</th>
+      <th class="border p-2">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (msg of messages; track $index) {
+    <tr>
+      <td class="border p-2">{{ msg.id }}</td>
+      <td class="border p-2">{{ msg.phone }}</td>
+      <td class="border p-2">{{ msg.text }}</td>
+      <td class="border p-2">{{ msg.shipping_status | messageStatus}}</td>
+    </tr>
+    }
+  </tbody>
+</table>
